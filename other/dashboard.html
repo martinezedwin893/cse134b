@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Dashboard</title>
+    <meta charset="UTF-8">
+    <style>
+            *
+            {
+                box-sizing:border-box;
+            }
+
+
+
+            #myTable
+            {
+                border-collapse: collapse;
+                width:100%;
+                border: 1px solid #ddd;
+                font-size:18px;
+            }
+
+            #myTable th, #myTable td
+            {
+                text-align:left;
+                padding:12px;
+            }
+
+            #myTable tr
+            {
+                border-bottom: 1px solid #ddd;
+            }
+
+            #myTable tr.header, #myTable tr:hover
+            {
+                background-color: #f1f1f1;
+            }
+
+
+            h2
+            {
+                background-color: rgb(92, 190, 11);
+                text-align: center
+            }
+            /*All a elements in div.links class*/
+            a
+            {
+               text-decoration: none;
+               font-size: 15px;
+               padding: 1px;
+               float: right;
+            }
+
+
+            body
+            {
+                background-color: white;
+
+            }
+
+            tr
+            {
+                background-color:rgb(92, 190, 11);
+            }
+
+            #profile_image
+            {
+                float: right;
+                width: 7%;
+                height: 7%;
+            }
+
+            .links
+            {
+                color: green;
+                float: right;
+            }
+
+            #dashboard_image
+            {
+                float: center;
+                width: 60%;
+                height: 60%;
+            }
+            .org_images
+            {
+                height: 20%;
+            }
+
+            #name_column
+            {
+                width:20%;
+            }
+
+            #width_column
+            {
+                width: 70%;
+            }
+
+            #area_code_column
+            {
+                width: 10%;
+            }
+
+        </style>
+
+</head>
+
+<body>
+
+
+<h2> Welcome Back John! </h2>
+<div id = "profile_picture">
+    <img src = "profile.jpg" id="profile_image"  alt="profile">
+
+</div>
+
+<div class = "links" >
+    <a href = "../login.html"> Log Out </a>
+    <a href = "../profile.html"> View Profile </a>
+
+</div>
+
+<div id = "dashboard_pic">
+    <img src = "volunteers.jpg" id = "dashboard_image"  alt="volunteers" >
+</div>
+
+
+
+<div>
+<h1>See who needs volunteers in your area!</h1>
+</div>
+<input type = "text" id = "myInput"  onkeyup = "myFunction()"
+ placeholder = "Search area code" title = "Type in a name">
+
+
+<table id  = "myTable">
+    <tr class = "header">
+        <td id = "area_code_column">Area Code</td>
+        <td id="name_column">Name</td>
+        <td id="description_column">Description </td>
+
+
+    </tr>
+
+    <tr onclick="loadPage()">
+        <td> 92123</td>
+        <td>UCSD medical center </td>
+        <td>
+            <img src = "ucsd.png" class="org_images"  alt = "ucsd campus image">
+            <p>The University California, San Diego is one of the world's
+                leading public research universities, located in beautiful
+                 La Jolla, California. </p>
+        </td>
+
+    </tr>
+
+    <tr onclick="loadPage()">
+        <td> 92144</td>
+        <td>Anime Expo </td>
+        <td>
+                <img src = "animeexpo.jpg" class = "org_images" alt = "ucsd campus image">
+                <p>
+                    Anime Expo is the largest celebration of Japanese pop culture
+                     in North America! Join us in downtown LA on July 5-8,
+                     2018, plus Pre-Show Night on July 4!
+                </p>
+        </td>
+
+    </tr>
+
+
+    <tr onclick="loadPage()">
+        <td> 90122</td>
+        <td>Facebook </td>
+        <td>
+                <img src = "facebook.jpg" class="org_images"  alt = "ucsd campus image">
+                <p>
+                    Connect with friends, family and other people you know. Share
+                    photos and videos, send messages and get updates.
+                </p>
+        </td>
+
+    </tr>
+
+
+    <tr onclick="loadPage()">
+        <td> 92123</td>
+        <td>Westfield Mall </td>
+        <td>
+                <img src = "ls.jpg" class="org_images"  alt = "ucsd campus image">
+                <p>
+                        From organic living to the casual elegance of La Jolla,
+                        Westfield UTC presents the ultimate resort shopping
+                        experience. Located in the vibrant core of San Diego's
+                        most affluent beach community,
+                        Westfield UTC serves one of the most affluent trade
+                        areas in the country.
+                </p>
+        </td>
+
+    </tr>
+
+</table>
+
+
+<script>
+    function myFunction()
+    {
+
+        var input,filter,table,tr,td,i;
+        input = document.getElementById("myInput").value;
+        //filer = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        header = document.getElementsByClassName("header");
+
+        for(i = 0; i < tr.length;i++)
+        {
+
+            td = tr[i].getElementsByTagName("td")[0].textContent;
+            //console.log(td);
+
+            if(td && td.includes(input) || td == "Area Code" )
+            {
+
+                tr[i].style.display = "";
+            }
+
+            else
+            {
+                tr[i].style.display = "none";
+            }
+
+        }
+    }
+
+    function loadPage()
+    {
+        window.open("volunteer.html");
+    }
+</script>
+
+
+</body>
+
+
+
+
+</html>

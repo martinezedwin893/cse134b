@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Chat</title>
+    <script type="text/javascript" src="chat.js"></script>
+    <link type="text/css" rel="stylesheet" href="chat.css" />
+    <meta charset="UTF-8">
+    <meta name ="description" content ="Volunteer Chat">
+    <meta name ="author" content = "Justin Meng">
+</head>
+<body>
+<div class="wrapper", id="wrapper">
+    <div class="menu">
+        <p class="logout"><a id="exit" href="#">x</a></p>
+        <div style="clear:both"></div>
+    </div>
+     
+    <div class="chatbox">
+    	<div class="chat-message-content" id="chat">
+    		<div class = "userinfo">
+				<div class="username"> 
+					<strong>Justin Meng</strong>
+				</div>
+				<div class="time">
+					11:24 a.m.
+		  	  </div>
+			</div>
+            <div class = "usermessage">
+			Hi, I heard that you guys have a volunteer position open for the hospital for the next few weeks
+            </div>
+          <hr>
+          <div class = "otheruserinfo">
+            <div class = "username">
+                <strong>Edwin Martinez</strong>
+            </div>
+            <div class = "time">
+                11:26 a.m.
+            </div>
+          </div>
+            <div class = "otherusermessage">
+                Yes, we have positions available for this, this, and this
+            </div>
+            <hr>
+            <div class = "userinfo">
+                <div class="username"> 
+                    <strong>Justin Meng</strong>
+                </div>
+                <div class="time">
+                    11:34 a.m.
+              </div>
+            </div>
+            <div class = "usermessage">
+            Great! Would you be free to talk over the phone?
+            </div>
+    </div>
+    </div>
+    <div class="submit">
+        <label> 
+           <input type="text" name="message" id = "message" required>   
+       </label> 
+       <button type="button" id='submit' onclick='sendChat()'>Send
+       </button>
+   </div>
+</div>
+</body>
+</html>

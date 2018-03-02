@@ -1,0 +1,5 @@
+/Users/pjfmartinez/Projects/cse134b/cse134b/bin/cse134b.dll
+/Users/pjfmartinez/Projects/cse134b/cse134b/bin/cse134b.pdb
+/Users/pjfmartinez/Projects/cse134b/cse134b/obj/Debug/cse134b.csproj.CoreCompileInputs.cache
+/Users/pjfmartinez/Projects/cse134b/cse134b/obj/Debug/cse134b.dll
+/Users/pjfmartinez/Projects/cse134b/cse134b/obj/Debug/cse134b.pdb

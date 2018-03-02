@@ -1,0 +1,53 @@
+.wrapper {
+    margin:0 auto;
+    background: #76b852;
+}
+  
+.chatbox {
+	padding: 2%;
+    margin-bottom: 1%;
+    background: white;
+    width: 93%;
+    height:80%;
+    display: inline-flex;
+}
+
+.chat-message-content {
+	width: 100%;
+}  
+
+.userinfo {
+	width: 100%;
+}
+
+.username {
+	display: inline-flex;
+}
+.time {
+	display: inline-flex;
+	padding-left: 5%;
+}
+
+.usermessage {
+	width: 100%;
+    padding-top: 2%;
+    text-align: left;
+}
+  
+.otheruserinfo {
+	text-align: right;
+}
+
+.otherusermessage {
+	width: 100%;
+	padding-top: 2%;
+    text-align: right;
+}
+
+.submit {
+	text-align: right;
+}
+.logout { 
+	float :right; 
+}
+  

@@ -1,0 +1,45 @@
+.volunteer {
+	width: 80%;
+	border: 1px solid black;
+}
+.contact_info {
+	padding-left: 2%;
+}
+.volunteer_description {
+	vertical-align: top;
+	padding-top: 2%;
+}
+
+.required_hours {
+	vertical-align: bottom;
+}
+
+.jobs {
+	padding-left: 3%;
+}
+
+.contact {
+	text-align: left;
+}
+
+.fillOut {
+	width: 100%;
+}
+
+.signature {
+	display: inline-block;
+	text-align: left;
+}
+
+.date {
+	display: inline-block;
+	text-align: left;
+}
+
+.register_now {
+	display: inline-block;
+	float: right;
+}
+body {
+	background-color: white;
+}
